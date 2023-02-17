@@ -7,7 +7,7 @@ export default class BearMap extends LightningElement {
   @wire(MessageContext)
   messageContext;
   connectedCallback() {
-    // Subscribe to BearListUpdate__c message
+    
     this.subscription = subscribe(
         this.messageContext,
         BEAR_LIST_UPDATE_MESSAGE,
