@@ -1,0 +1,10 @@
+<template>
+    <lightning-button class="renderButton" onclick={renderNewParagraph}></lightning-button>
+    <template class="newParagraphTemplate" lwc:if={showNewParagraph}>
+        <p class="newParagraph">Wow i love Food</p>
+    </template>
+    <template class="usersTemplate" for:each={users} for:item="user">
+          <p class="userInfor" key={user.id}>{user.id }{user.firstName}</p>
+    </template>
+    <p class="textMessage">{textMessage}</p>  
+</template>
