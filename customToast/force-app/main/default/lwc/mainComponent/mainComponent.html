@@ -1,0 +1,8 @@
+<template>
+    <lightning-card>
+        <lightning-button variant="brand" label="Brand" title="Primary action" onclick={clickedMe} class="slds-m-left_x-small"></lightning-button>
+    </lightning-card>
+    <template if:true={called}>
+      <c-custom-toast-message message="from parent message" visible=true onundo={undoTask}></c-custom-toast-message>
+    </template>
+</template>
